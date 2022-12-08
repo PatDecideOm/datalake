@@ -2,6 +2,6 @@ version: 2
 
 sources:
 
-  - name: PUBLIC
+  - name: datalake_public
     tables: 
-      - name: CLIENT
+      - name: client
