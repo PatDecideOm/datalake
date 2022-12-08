@@ -6,7 +6,7 @@
 
 select 
     CLIENT_VILLE as CLIENT_VILLE,
-    count(CLIENT_CODE) as NB_CLIENTS
-from {{ source('datalake_public', 'client') }} 
+    count(distinct CLIENT_CODE) as NB_CLIENTS
+from {{ source('public', 'client') }} 
 group by 
     CLIENT_VILLE
