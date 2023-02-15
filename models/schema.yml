@@ -4,5 +4,4 @@ sources:
 
   - name: public
     tables: 
-      - name: client
       - name: ventes
