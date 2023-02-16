@@ -6,7 +6,7 @@
 
 {{
     config(
-      target_database='datalake',
+      target_database='DECIDEOM_LYON',
       target_schema='dbt',
       unique_key='id',
 
