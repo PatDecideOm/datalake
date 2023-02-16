@@ -6,4 +6,4 @@
 
 select 
     sum(id) as nb_id
-from {{ source('snowflake_datalake_public', 'mydata') }} 
+from {{ source('datalake_public', 'mydata') }} 
