@@ -6,8 +6,8 @@
 
 {{
     config(
-      target_database='datalake_public',
-      target_schema='snapshots',
+      target_database='datalake',
+      target_schema='dbt',
       unique_key='id',
 
       strategy='timestamp',
