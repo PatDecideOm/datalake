@@ -1,15 +1,12 @@
 version: 2
     
 sources:
-  - name: public
+  - name: snowflake_datalake_public
     tables:
-      - name: client
-  - name: snowflake_public
-    tables:
-      - name: client
+      - name: mydata
 
 
 target:
-  - name: datalake_public
+  - name: snowflake_datalake_public
     tables:
-      - name: agg_client
+      - name: agg_ventes
