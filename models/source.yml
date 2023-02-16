@@ -4,3 +4,8 @@ sources:
   - name: public
     tables:
       - name: client
+
+target:
+  - name: datalake_public
+    tables:
+      - name: agg_client
