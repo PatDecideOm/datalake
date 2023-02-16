@@ -10,3 +10,4 @@ target:
   - name: datalake_public
     tables:
       - name: agg_ventes
+      - name: agg_clients
