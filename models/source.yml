@@ -4,6 +4,10 @@ sources:
   - name: public
     tables:
       - name: client
+  - name: snowflake_public
+    tables:
+      - name: client
+
 
 target:
   - name: datalake_public
