@@ -2,9 +2,16 @@
     Chargement des données
 */
 
-{{ config(materialized='incremental') }}
+{{ 
+    config(
+        materialized='incremental',
+        unique_key = 'id',
+        incremental_strategy='merge'
+        ) 
+}}
 
 select 
     id,
-    libelle
+    libelle,
+    dat_maj
 from {{ source('datalake_public', 'mydata') }} 
