@@ -13,5 +13,5 @@
 select 
     id,
     libelle,
-    dat_maj
+    date_maj
 from {{ source('datalake_public', 'mydata') }} 
